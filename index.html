@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Birthday Day Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🎂 Birthday Day Finder</h1>
+
+    <label for="dob">Enter your date of birth:</label>
+    <input type="date" id="dob">
+
+    <label for="years">Show upcoming birthdays for:</label>
+    <select id="years">
+      <option value="5">Next 5 years</option>
+      <option value="10" selected>Next 10 years</option>
+      <option value="20">Next 20 years</option>
+    </select>
+
+    <button onclick="findDays()">Find Days</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
